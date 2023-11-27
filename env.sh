@@ -18,7 +18,7 @@ wget https://golang.org/dl/go1.21.1.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf go1.21.1.linux-amd64.tar.gz
 rm go1.21.1.linux-amd64.tar.gz
 
-tee ~/.profile > /dev/null << EOF
+tee -a ~/.profile > /dev/null << EOF
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
 export GO111MODULE=on
