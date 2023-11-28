@@ -25,4 +25,14 @@ EOF
 
 source ~/.profile
 
+# check work dir
+rockx_dir="/opt/rockx"
+# 检查目录是否存在
+if [ -d "$rockx_dir" ]; then
+    echo "The directory $rockx_dir already exists. Skipping..."
+else
+    # 如果目录不存在，则创建并设置权限
+    sudo mkdir -p "$rockx_dir" && sudo chown -R ubuntu:ubuntu "$rockx_dir"
+    echo "The directory $rockx_dir was created and permissions were set."
+fi
 
