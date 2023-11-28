@@ -3,8 +3,8 @@
 sudo apt update
 sudo apt install python3-pip -y
 pip3 install prometheus_client
+pip3 install psutil
 pip3 install loguru
-pip3 --version
 
 # install dependent
 sudo apt update && sudo apt install snapd -y && sudo apt-get install git -y && sudo apt-get install gcc -y  && sudo apt-get install make -y
@@ -24,3 +24,5 @@ export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 EOF
 
 source ~/.profile
+
+
