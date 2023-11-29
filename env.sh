@@ -10,6 +10,7 @@ pip3 install loguru
 sudo apt update && sudo apt install snapd -y && sudo apt-get install git -y && sudo apt-get install gcc -y  && sudo apt-get install make -y
 sudo snap install lz4
 sudo apt install net-tools -y
+sudo apt-get install iftop -y
 
 # install go
 sudo rm -rvf /usr/local/go/
